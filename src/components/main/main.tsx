@@ -11,7 +11,6 @@ export function Main() {
 	const [addProduct] = useAddLinesMutation()
 	const [delet] = useDeleteLinesMutation()
 	const [update] = useUpdateLinesMutation()
-	const [rID, setrID] = useState('')
 
 	const createLines = async (parentid: any) => {
 		const defaultBody = {
@@ -51,11 +50,9 @@ export function Main() {
 		}
 
 		await update({ rID: Number(rID), bod: defaultBody })
-		setrID('')
 	}
 	const deleteLines = async (rID: string) => {
 		await delet(rID).unwrap()
-		setrID('')
 	}
 	var test = useState(true)
 	const { data = [] } = useAllLinesQuery('')
