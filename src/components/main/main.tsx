@@ -167,7 +167,7 @@ export function ListLiner(
 										placeholder='name'
 										value={allLindes.rowName}
 										onChange={e =>
-											setAllLindes(prev => ({
+											setAllLindes((prev:any) => ({
 												...prev,
 												rowName: e.target.value,
 											}))
@@ -183,7 +183,7 @@ export function ListLiner(
 										placeholder='salary'
 										value={allLindes.salary}
 										onChange={e =>
-											setAllLindes(prev => ({
+											setAllLindes((prev:any) => ({
 												...prev,
 												salary: e.target.value,
 											}))
@@ -199,7 +199,7 @@ export function ListLiner(
 										placeholder='equipmentCosts'
 										value={allLindes.equipmentCosts}
 										onChange={e =>
-											setAllLindes(prev => ({
+											setAllLindes((prev:any) => ({
 												...prev,
 												equipmentCosts: e.target.value,
 											}))
@@ -215,7 +215,7 @@ export function ListLiner(
 										placeholder='overheads'
 										value={allLindes.overheads}
 										onChange={e =>
-											setAllLindes(prev => ({
+											setAllLindes((prev:any) => ({
 												...prev,
 												overheads: e.target.value,
 											}))
@@ -231,7 +231,7 @@ export function ListLiner(
 										placeholder='estimatedProfit'
 										value={allLindes.estimatedProfit}
 										onChange={e =>
-											setAllLindes(prev => ({
+											setAllLindes((prev:any) => ({
 												...prev,
 												estimatedProfit: e.target.value,
 											}))
