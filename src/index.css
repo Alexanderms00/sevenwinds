@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  background-color: #2C2C2C;
+  color: white;
+}
+.btnbasket{
+  display: none;
+}
+
+
+.basket:hover .btnbasket{
+display: inline;
+}
