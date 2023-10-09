@@ -11,7 +11,7 @@ export const sevenApi: any = createApi({
 			query: () => ({
 				url: `/v1/outlay-rows/entity/${eID}/row/list`,
 			}),
-			providesTags: result => ['LIST']
+			providesTags: ['LIST']
 		}),
 
 		updateLines: build.mutation({
